@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="d-flex justify-content-center">
+    <h2 class="mb-4">Notícias atuais:</h2>
+  </div>
+  <div class="container">
+    <div class="card mb-4" *ngFor="let news of filteredNews">
+      <div class="card-header">
+        <h5 class="card-title d-flex justify-content-center">{{ news.title }}</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Criador da notícia: {{ news.name }}</p>
+        <p class="card-text">Sobre: {{ news.news }}</p>
+        <p class="card-text">Data de inserção: {{ news.date }}</p>
+      </div>
+    </div>
+  </div>
+</div>
